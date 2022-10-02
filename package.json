@@ -1,0 +1,25 @@
+{
+  "name": "your_donor",
+  "version": "1.0.0",
+  "description": "Real time blood donation",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r esm server.js",
+    "start": "node -r esm server.js"
+  },
+  "author": "Ritesh Singh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "d3-quadtree": "^3.0.1",
+    "dotenv": "^16.0.3",
+    "ems": "^1.6.1",
+    "esm": "^3.2.25",
+    "express": "^4.18.1",
+    "joi": "^17.6.2",
+    "js-quadtree": "^3.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.3",
+    "nodemon": "^2.0.20"
+  }
+}

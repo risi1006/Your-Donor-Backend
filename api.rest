@@ -1,0 +1,85 @@
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email" : "risi1006@gmail.com",
+    "password" : "Ritesh123"
+}
+
+###
+
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+    "name" : "Ritesh Singh",
+    "email" : "risi1006@gmail.com",
+    "password" : "Ritesh123",
+    "requiredPassword" : "Ritesh123"
+}
+
+
+###
+POST http://localhost:5000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpc2kudm5zQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiUml0ZXNoMTIzIiwiaWF0IjoxNjY0Njg4MjY3fQ.W96NC1nVWQn1Snn2BTSyFJeKXDbhK_I_swkCHFFE_HQ
+Content-Type: application/json
+
+{
+    "title" : "ritesh ji jindabad",
+    "description" : "singh sahab"
+}
+
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpc2kxMDA2QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiUml0ZXNoMTIzIiwiaWF0IjoxNjY0Njg4NTEwfQ.FA2HJvwunAczX6kYJT58avByaJA7W0udqw2m-QT0ab0
+
+###
+
+POST  http://localhost:5000/api/get
+Content-Type: application/json
+
+{
+   "lat" : 80.5463,
+    "lon" : 120.9912,
+    "bloodGroup" : "B+"
+}
+
+###
+POST http://localhost:5000/api/add
+Content-Type: application/json
+
+{
+    "lat" : 80.41214,
+    "lon" : 120.997878,
+    "data" : {"userName" : "Ritesh Singh", "mobile" : 7355497420, "bloodGroup" : "O+"}
+}
+
+###
+GET http://localhost:5000/api/bloodbank
+Content-Type: application/json
+
+{
+    "lat" : 80.5463,
+    "lon" : 120.9912,
+    "bloodType" : "B+"
+}
+
+###
+POST  http://localhost:5000/api/bloodbank
+Content-Type: application/json
+
+{
+    "lat" : 80.41914,
+    "lon" : 120.787878,
+    "data" : {"userName" : "Ritesh Blood Bank", "mobile" : 7355497420, "bloodGroup" : {
+        "A+ve" : 40,
+        "A-ve" : 33,
+        "B+ve" : 35,
+        "B-ve" : 23,
+        "AB+ve" : 100,
+        "AB-ve" : 120,
+        "O+ve" : 0,
+        "O-ve" : 0
+    }}
+}
